@@ -1,0 +1,218 @@
+body, html {
+    height: 100%;
+}
+// フォント
+h1 {
+    width: 90%;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 5%;
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 0;
+}
+h3 {
+    color: #222222;
+    font-size: 20px;
+}
+h4 {
+    font-size: 12px;
+    text-align: center;
+}
+p {
+    color: #222222;
+    font-size: 16px;
+}
+
+// ヘッダー
+header {
+    width: 100%;
+    height: 60PX;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header_wrap {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo {
+    padding-left: 4%;
+    img {
+        height: 60px;
+    }
+}
+.header_menu {
+    display: none;
+}
+.fa-envelope {
+    padding: 5px;
+}
+// ハンバーガーメニュー
+nav {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    display: flex;
+    text-align: center;
+    background-color: rgba(225,157,0,0.9);
+    ul {
+        width: 100px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    li {
+        width: 400px;
+        position: relative;
+        border-bottom: solid 1px rgba(255,255,255,0.5);
+    }
+    a {
+        display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+        line-height: 40px;
+        color: white;
+    }
+}
+.nav_menu {
+    display: block;
+    span {
+        font-size: 30px;
+        color: white;
+        line-height: 60px;
+    }
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    float: right;
+    background-color: #FF7F00;
+}
+
+// メインビジュアル
+.main_visual {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/mainvisual_mobile.png);
+    padding-top: 60px;
+    margin-top: 60px;
+    p {
+        color: white;
+    }
+}
+.mv_text {
+    padding: 0 5%;
+    text-align: left;
+}
+
+// ３つのポイント
+.three_points {
+    padding-bottom: 10%;
+    img {
+        width: 300px;
+    }
+}
+.point_cards {
+    display: block;
+}
+.point_card {
+    margin: 0 auto;
+    width: 300px;
+}
+// サービス紹介
+.service {
+    padding-bottom: 10%;
+    img {
+        width: 100%;
+    }
+}
+.service_cards {
+    display: block;
+}
+.service_card {
+    width: 100%;
+    padding: 0px;
+}
+.contact_btn {
+    a {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+}
+
+// 制作実績
+.works_wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+.works_cards{
+    display: block;
+    padding: 40px 0;
+}
+.works_card {
+    width : 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        padding: 0 10px;
+    }
+}
+// よくある質問
+.qa-list {
+    width: 90%;
+    padding-bottom: 10%;
+}
+
+// お問い合わせ
+.contact {
+    background-color: #F0F0F0;
+    padding-bottom: 10%;
+}
+form {
+    width: 90%;
+}
+// フッター
+footer {
+    background-color: #3E3E3E;
+    color: white;
+    padding-bottom: 3%;
+    img {
+        width: 200px;
+    }
+}
+.footer_wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.footer_detail {
+    p {
+        margin: 0;
+        padding: 3px 0;
+    }
+}
+.footer_menu {
+    padding-top: 0px;
+}
+.footer_menu1, .footer_menu2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 0;
+    li {
+        padding: 3px 0;
+    }
+}

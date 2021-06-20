@@ -1,0 +1,384 @@
+// 全体
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;  
+    transition: 0.5s;
+}
+a:hover {
+    opacity: 0.7;
+}
+// フォント
+h1 {
+    color: white;
+    font-size: 48px;
+}
+h2 {
+    color: #222222;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 0;
+}
+h3 {
+    color: #222222;
+    font-size: 24px;
+}
+h4 {
+    color: #FF7F00;
+    text-align: center;
+}
+p {
+    color: #222222;
+    font-size: 16px;
+}
+
+// ヘッダー
+header {
+    background-color: white;
+    width: 100%;
+    height: 85PX;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header_wrap {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo {
+    padding-left: 4%;
+    img {
+        display: flex;
+        height: 70px;
+    }
+}
+.header_menu {
+    display: flex;
+    line-height: 85px;
+    li {
+        height: 85px;
+        a {
+        color: #222222;
+        padding:0 20px;
+        }
+    }
+}
+.header_contact {
+    background-color: #FF7F00;
+    transition: 0.5s;
+}
+.header_contact:hover {
+    background-color: #FF9D00;
+}
+#contact_btn {
+    color: white;
+}
+.fa-envelope {
+    padding: 5px;
+}
+nav {
+    display: none;
+}
+.nav_menu {
+    display: none;
+}
+// メインビジュアル
+.main_visual {
+    height: 700px;
+    background-image: url(../img/mainvisual.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    padding-top: 200px;
+    margin-top: 85px;
+    p {
+        color: white;
+    }
+}
+.mv_text {
+    padding: 0 20%;
+    text-align: left;
+}
+// ３つのポイント
+.three_points {
+    padding-bottom: 5%;
+    img {
+        width: 300px;
+    }
+}
+.point_cards {
+    display: flex;
+    justify-content: center;
+}
+.point_card {
+    width: 300px;
+    padding: 0 2%;
+    h3 {
+        text-align: center;
+    }
+}
+// サービス紹介
+.service {
+    background-color: #F0F0F0;
+    padding-bottom: 5%;
+    img {
+        width: 370px;
+    }
+}
+.service_cards {
+    display: flex;
+    justify-content: center;
+}
+.service_card {
+    width: 370px;
+    padding: 30px;
+    h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.contact_btn {
+    text-align: center;
+    a {
+        display: inline-block;
+        width: 400px;
+        height: 70px;
+        line-height: 70px;
+        background-color: #FF7F00;
+        color: white;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    a:hover {
+        background-color: #FF9D00;
+    }
+}
+
+// 制作実績
+.works_wrap {
+    width: 1440px;
+    margin: 0 auto;
+}
+.works_cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.works_card {
+    width : calc(100% / 3) ;
+    img {
+        height: auto;
+    }
+    p {
+        padding-right: 10px;
+    }
+}
+// よくある質問
+.faq {
+    background-color: #F0F0F0;
+}
+.qa-list {
+    z-index: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.qa-list dl {
+    position: relative;
+    margin: 30px 0 0;
+    cursor: pointer;
+}
+.qa-list dl:first-child {
+  margin-top: 0;
+}
+.qa-list dl::after {
+    position: absolute;
+    top: 27px;
+    right: 26px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: '';
+    transform: rotate(135deg);
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.qa-list .open::after {
+    transform: rotate(-45deg);
+}
+.qa-list dl dt {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+    font-weight: bold;
+    background: white;
+}
+.qa-list dl dt::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    content: 'Q.';
+}
+.qa-list dl dd::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    left: 20px;
+    display: block;
+    content: 'A.';
+    font-weight: bold;
+}
+.qa-list dl dd {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+    background: white;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .qa-list dl {
+        margin: 10px 0 0;
+    }
+    .qa-list dl:after {
+        top: 20px;
+        right: 20px;
+        width: 7px;
+        height: 7px;
+    }
+    .qa-list dl dt {
+        padding: 16px 16px 16px 50px;
+        font-size: 14px;
+    }
+    .qa-list dl dt::before {
+        font-size: 14px;
+        top: 20px;
+        left: 20px;
+    }
+    .qa-list dl dd::before {
+        font-size: 14px;
+        left: 20px;
+        margin-top: 5px;
+    }
+    .qa-list dl dd {
+        margin: 0;
+        padding: 16px 16px 16px 50px;
+        font-size: 14px;
+    }
+    .qa-list dl dd p {
+        margin: 30px 0 0;
+    }
+    .qa-list dl dd p:first-child{
+        margin-top: 0;
+    }
+}
+// お問い合わせ
+.contact {
+    background-color: #F0F0F0;
+    padding-bottom: 5%;
+}
+form {
+    width: 60%;
+    margin: 0 auto;
+    span {
+        color:red;
+        padding-left: 10px;
+    }
+}
+input {
+    width: 98%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    padding: 0 0 0 2%;
+    margin-bottom: 20px;
+}
+textarea {
+    width: 98%;
+    border: none;
+    height: 120px;
+    padding: 2% 0 0 2%;
+}
+.submit {
+    width: 150px;
+    height: 50px;
+    display: block;
+    background-color: #FF7F00;
+    color: white;
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+}
+.submit:hover  {
+    background-color: #FF9D00;
+}
+/* iOSでの送信ボタンデフォルトスタイルをリセット */
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+// フッター
+footer {
+    background-color: #3E3E3E;
+    color: white;
+    padding-bottom: 3%;
+    img {
+        width: 300px;
+    }
+    a {
+        color: white;
+        opacity: 0.7;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.footer_detail {
+    p {
+        color: white;
+        opacity: 0.7;
+    }
+}
+.footer_menu {
+    padding-top: 14px;
+}
+.footer_menu1, .footer_menu2 {
+    display: flex;
+    li {
+        padding: 0 10px;
+    }
+}
+.copyright {
+    width: 200px;
+    opacity: 0.7;
+    padding: 0 5%;
+}

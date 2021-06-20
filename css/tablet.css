@@ -1,0 +1,127 @@
+h1 {
+  color: white;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+  margin: 0;
+}
+
+h3 {
+  color: #222222;
+  font-size: 24px;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  color: #222222;
+  font-size: 16px;
+}
+
+header {
+  height: 60PX;
+}
+
+.header_wrap {
+  height: 60px;
+}
+
+.header_logo {
+  padding-left: 4%;
+}
+
+.header_logo img {
+  height: 60px;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 60px;
+}
+
+.header_menu li {
+  height: 60px;
+}
+
+.header_menu li a {
+  padding: 0 10px;
+}
+
+.fa-envelope {
+  padding: 5px;
+}
+
+.main_visual {
+  height: 500px;
+  padding-top: 100px;
+  margin-top: 60px;
+}
+
+.main_visual p {
+  color: white;
+}
+
+.three_points img {
+  width: 200px;
+}
+
+.point_card {
+  width: 200px;
+}
+
+.service {
+  padding-bottom: 5%;
+}
+
+.service img {
+  width: 240px;
+}
+
+.service_card {
+  width: 240px;
+}
+
+.service_card h3 {
+  text-align: left;
+}
+
+.contact_btn a {
+  width: 300px;
+}
+
+.works_wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.works_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.works_card {
+  width: calc(100% / 2);
+  text-align: center;
+}
+
+.works_card img {
+  height: auto;
+}
+
+.works_card p {
+  text-align-last: left;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=tablet.css.map */
