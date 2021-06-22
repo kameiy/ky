@@ -70,17 +70,19 @@ header {
     li {
         height: 85px;
         a {
-        color: #222222;
+            display: block;
+        color: #222222;;
         padding:0 20px;
+        }
+        a:hover {
+            color: white;
+        background-color: #FF9D00;
         }
     }
 }
 .header_contact {
     background-color: #FF7F00;
     transition: 0.5s;
-}
-.header_contact:hover {
-    background-color: #FF9D00;
 }
 #contact_btn {
     color: white;

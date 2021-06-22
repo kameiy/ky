@@ -97,18 +97,20 @@ header {
 }
 
 .header_menu li a {
+  display: block;
   color: #222222;
   padding: 0 20px;
+}
+
+.header_menu li a:hover {
+  color: white;
+  background-color: #FF9D00;
 }
 
 .header_contact {
   background-color: #FF7F00;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.header_contact:hover {
-  background-color: #FF9D00;
 }
 
 #contact_btn {
