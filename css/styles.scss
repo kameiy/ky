@@ -170,12 +170,13 @@ nav {
 // 制作実績
 .works_wrap {
     width: 1440px;
+    padding-bottom: 5%;
     margin: 0 auto;
 }
 .works_cards{
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding-top: 40px;
 }
 .works_card {
     width : calc(100% / 3) ;
@@ -183,12 +184,13 @@ nav {
         height: auto;
     }
     p {
-        padding-right: 10px;
+        padding:0 16px;
     }
 }
 // よくある質問
 .faq {
     background-color: #F0F0F0;
+    padding-bottom: 5%;
 }
 .qa-list {
     z-index: 0;
@@ -329,7 +331,7 @@ textarea {
     color: white;
     transition: 0.5s;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0;
 }
 .submit:hover  {

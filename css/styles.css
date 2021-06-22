@@ -223,6 +223,7 @@ nav {
 
 .works_wrap {
   width: 1440px;
+  padding-bottom: 5%;
   margin: 0 auto;
 }
 
@@ -232,7 +233,7 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 .works_card {
@@ -244,11 +245,12 @@ nav {
 }
 
 .works_card p {
-  padding-right: 10px;
+  padding: 0 16px;
 }
 
 .faq {
   background-color: #F0F0F0;
+  padding-bottom: 5%;
 }
 
 .qa-list {
@@ -408,7 +410,7 @@ textarea {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0;
 }
 
