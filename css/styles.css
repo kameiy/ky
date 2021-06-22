@@ -143,8 +143,8 @@ nav {
 }
 
 .mv_text {
+  text-align: center;
   padding: 0 20%;
-  text-align: left;
 }
 
 .three_points {
@@ -414,6 +414,12 @@ textarea {
 
 .submit:hover {
   background-color: #FF9D00;
+}
+
+/* iOSでの送信ボタンデフォルトスタイルをリセット */
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 footer {
