@@ -59,28 +59,18 @@ nav {
     margin: 0 auto;
     display: block;
     color: white;
-    display: flex;
     text-align: center;
     background-color: rgba(225,157,0,0.9);
+    li {
+        border-bottom: solid 1px rgba(255,255,255,0.5);
+    }
     ul {
-        width: 100px;
         padding: 0;
         margin: 0 auto;
     }
-    li {
-        width: 400px;
-        position: relative;
-        border-bottom: solid 1px rgba(255,255,255,0.5);
-    }
     a {
-        display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-        line-height: 40px;
         color: white;
+        line-height: 40px;
     }
 }
 .nav_menu {
