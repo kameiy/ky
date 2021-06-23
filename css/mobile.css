@@ -81,16 +81,24 @@ nav {
 }
 
 nav ul {
-  width: 100%;
+  width: 100px;
   padding: 0;
   margin: 0 auto;
 }
 
 nav li {
+  width: 400px;
+  position: relative;
   border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 }
 
 nav a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   line-height: 40px;
   color: white;
 }
@@ -187,10 +195,6 @@ nav a {
 .works_card img {
   width: 100%;
   height: auto;
-}
-
-.works_card p {
-  padding: 0 10px;
 }
 
 .qa-list {
